@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rush</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<script>
+		window.addEventListener("scroll", function() {
+		  const header = document.getElementById("header");
+		  if (window.scrollY > 50) {
+			header.classList.add("scrolled");
+		  } else {
+			header.classList.remove("scrolled");
+		  }
+		});
+	</script>
+</head>
+<body>
+	<header id="header">
+		<nav class="nav">
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<img src="https://liquipedia.net/commons/images/3/3e/TQ_Joeyscags_ICONS_2022.jpg" alt="Simon Wied" class="section-img">
+			<h1 class="name">Joeyscags</h1>
+			<p class="birthdate">13.01.2004</p>
+			<p class="description">Wild Rift pro player</p>
+			<div class="fav-champ">
+				<img src="https://ddragon.leagueoflegends.com/cdn/13.22.1/img/champion/Vayne.png" alt="Vayne" class="champ-icon">
+				<p class="champ-text">Favorite champion: <span>Vayne</span> | Role: <span>ADC</span></p>
+			</div>
+		</section>
+		<section id="skills">
+			<h1>Skills & Achievements</h1>
+			<div class="achievements-grid">
+				<div class="achievement">
+					<img src="https://liquipedia.net/commons/images/a/a6/WR_EMEA_Champs_allmode_full.png" alt="EMEA 2022">
+					<p>EMEA Championship 2022</p>
+				</div>
+				<div class="achievement">
+					<img src="https://liquipedia.net/commons/images/b/bd/The_Purge_Tournament_allmode.png" alt="The Purge">
+					<p style="color: orange">The Purge Wild Rift</p>
+				</div>
+				<div class="achievement">
+					<img src="https://liquipedia.net/commons/images/5/5b/WR_ICONS_2022_allmode_full.png" alt="Icons Global">
+					<p style="color: violet;">Icons Global Championship 2022</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="contact">
+			<div class="contact-links">
+				<ul>
+					<li><a href="https://liquipedia.net/wildrift/Joeyscags"><img src="https://liquipedia.net/commons/extensions/TeamLiquidIntegration/resources/pagelogo/liquipedia_icon_menu.png" alt="Liquipedia"></a></li>
+					<li><a href="https://www.linkedin.com/in/joey-cupp-360b9a358/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/250px-LinkedIn_logo_initials.png" alt="LinkedIn"></a></li>
+				</ul>
+			</div>
+	</footer>
+</body>
+</html>
